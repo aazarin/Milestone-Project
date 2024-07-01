@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------input title-------------->
+    <title>Project-Milestone</title>
+    <!---------------allow the file to have access to the css sheet to add design-------------->
+    <link   rel="stylesheet" type ='text/css' href="style.css">
+    <style>
+        *{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+/*---------------home--------------*/
+#header{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /*background-image: url(images/BG1_16to9.jpg);*/
+    background-color: white;
+    background-size: cover;
+    position: relative;
+    size: fluid;
+    
+}
+.container{
+    width: 100%;
+    
+    padding: 10px 10px 10px 10px;
+    
+    
+}
+.navigation{
+    width: 100%;
+    padding: 40px 10px 10px 10px;
+  
+    background-color: #fdc531;
+  
+    position: relative;
+}
+
+/*creating the navigation menu and design*/
+nav{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.logo{
+    
+    width:100% ;
+    position: fluid; 
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #080808;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    font-size: 30px;
+    color: #080808;
+    margin: 5px 80px;
+}
+header-text h1{
+    font-size: 60px;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #080808;
+}
+h1{
+    text-align: center;
+   font-size: 6vw;
+   
+}
+/*---------------about--------------*/
+#about{
+    padding: 80px 0px;
+    color: #ababab;
+    margin: 10px 6% ;
+    background-color: #35363a;
+    max-width:100%;
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+/*---------------adding link formats--------------*/
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #080808;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    top: -10px;
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*---------------contact--------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+/*---------------adding social media icons--------------*/
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+/*---------------turn them into properly working buttons--------------*/
+.btn{
+    margin-top: 30px;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.btn a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #080808;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    top: -10px;
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px){
+
+    
+}
+    </style>
+    <script src="https://kit.fontawesome.com/fbe3248231.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    
+    
+<div id="header">
+    <div class="container">
+        <!---------------creating the navigation menu-------------->
+       
+            <img src="images/38542001-designstyle-boots-o.png" class="logo" >
+        <nav class = "navigation">
+            <ul>
+                <!---------------create 3 pages-------------->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+        <!---------------first page header text and design-------------->
+    <div class="header-text">
+            <!---------------add new text font to make it more interesting-------------->
+            <h1 style="font-family: Georgia;">Information Technology/Cybersecurity</h1>
+            <div>
+            <!---------------add and adjust background image to fit the page-------------->
+                <img src="images/images.jpg" width="100%" height="auto" style="position: fluid; " class="responsive">
+            </div>
+
+        
+    </div>
+</div>
+<!---------------about-------------->
+<div id="about">
+    <div class="container">
+    
+        <!---------------copy navigation menu from Home page to About page-------------->
+        <nav>
+            <ul>
+                <!---------------implement the navigation bar to be linked to all 3 pages-------------->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/Images/thumbnail.png">
+            </div>
+            <!---------------create 3 paragraphs for background, experience, and goals-------------->
+            <div class="about-col-2">
+                <h1 class="sub-title" style="font-family: Georgia;">About Me</h1>
+                <p style="font-family: Georgia;">I am a first generation American citizen and have lived in Georgia my entire life. Coming from a middle eastern family and growing up in America, I’ve learned from two very different cultures and have found a love for learning and trying new things.  I grew up in the generation that began with flip phones and gameboys, so because of that, I love playing games. I originally came to Kennesaw state to pursue an education in Game Design, but as I spent more time and took more classes, I found that I would rather have that as a hobby than a career. Now, I am pursuing a degree in the field of IT, specifically Cybersecurity.  </p>
+                <br>
+                <p style="font-family: Georgia;">When I first came to Kennesaw, I was terrified of being on campus. The year I enrolled was the year before covid happened, so because of that, meeting new people and trying to be social was harder than it used to be. Thankfully, as soon as I began taking classes, I made friends and began my college life. Going into my third year, I absolutely love being on campus and hanging out with the friends I have made. The classes were not that interesting at first, but once I changed my major, I began loving all the classes. Learning about how to use, operate, and fix computers is something I found that I am really interested in now. I now know some different coding languages like C#, Java, Python, and Html. </p>
+                <br>
+                <p style="font-family: Georgia;">My goal for my college career is to get my degree in the next year and a half. In a way, I am sad that my college career is getting closer to finishing, but I am glad that I can finally be done and find a job. I have several different jobs that I am hoping for, but in general, I just hope to find a well paying job where I can buy a house one day. Once I am able to find a job, I would like to start working on creating a game in my free time as a fun hobby. I have always loved playing games, so being able to make one is a dream I have had for as long as I can remember. Having been inspired by so many different games, I want to put a little bit of everything that I grew up and loved into one game that I feel many would also love. My dream is to help the next generation fulfill their dreams in tech, whether it be in something more technical or creative, I wholeheartedly believe that it would be a great idea to start kids off young to help catch them up to constant advancements in the fields and to aid in them finding what they wish to pursue in life. </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <!---------------copy the navigation menu again from the Home page to Contact page-------------->
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="contact-left">
+                <img src="images/top-view-chat-bubbles-with-telephone-receiver-copy-space_23-2148796078.avif">
+                <!---------------Include contact info and add social media links for reference-------------->
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>aazarin1@students.kennesaw.edu</p>
+                <p><i class="fa-solid fa-phone"></i>678-558-9401</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-left">
+                <!---------------create a contact form in which user can input information and submit for me to recieve-------------->
+                <form id="contact-form" action="/send-email" method="POST" onsubmit="return validateForm()">
+                    <input type="text" id="name" name="name" class="contact-form name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" class="contact-form email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" class="contact-form message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <script>
+                    function validateForm(){
+                        let name = document.getElementById('name').value;
+                        let email = document.getElementById('email').value;
+                        let message = document.getElementById('message').value;
+
+                        if (name.trim() === ''){
+                            alert('Please enter your name. ');
+                            return false;
+                        }
+                        if (email.trim() === ''){
+                            alert('Please enter your email. ');
+                            return false;
+                        }
+                        if (message.trim() === ''){
+                            alert('Please enter your message. ');
+                            return false;
+                        }
+                        return true;
+                    }
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+
+                        let formData = new FormData(this);
+
+                        fetch('/send-email', {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.text())
+                        .then(data => {
+                            console.log(data);
+                            alert('Message sent successfully!');
+                        })
+                        .catch(error => {
+                            console.error('Error: ', error);
+                            alert('An error has occurred. Please try again later.');
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>   
+</html>
